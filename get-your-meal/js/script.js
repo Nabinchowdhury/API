@@ -14,18 +14,19 @@ const showFood = (foods) => {
 
         const foodItems = document.createElement('div')
         foodItems.classList.add("text-center")
-        console.log(food)
+
+        foodItems.classList.add("col")
+        // console.log(food)
         foodItems.innerHTML =
             `
-    <div class="card">
-                    <img src="${food.strMealThumb}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">${food.strMeal}</h5>
-                        <p class="card-text">${food.strInstructions.slice(0, 100)}</p>
-                      
-                    </div>
-                </div>
-    `
+           <div class="card">
+           <img src="${food.strMealThumb}" class="card-img-top" alt="...">
+           <div class="card-body">
+           <h5 class="card-title">${food.strMeal}</h5>
+           <p class="card-text">${food.strInstructions.slice(0, 100)}</p>
+           </div>
+           </div>
+            `
         foodContainer.appendChild(foodItems)
     })
 }
