@@ -13,14 +13,14 @@ const showCountries = countries => {
     // allCountries.classList.add("countries")
 
     countries.forEach(country => {
-        // console.log(country)
+        console.log(country)
 
         const countryDiv = document.createElement("div");
         countryDiv.classList.add('countries')
         countryDiv.innerHTML =
             `
     <h3>Name: ${country.name.common} </h3>
-    <p>Capital: ${country.capital} </p>
+    <p>Capital: ${country.capital ? country.capital : 'No Capital'} </p>
     <button onclick="loadcountryDetails('${country.cca2}' )">Details </button>
         `
         allCountries.appendChild(countryDiv);
