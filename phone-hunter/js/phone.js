@@ -7,7 +7,15 @@ const loadPhones = async (search) => {
 
 const displayPhones = (phones) => {
     const phoneContainer = document.getElementById('phone-container')
+    const msg = document.getElementById("no-msg");
     phoneContainer.innerHTML = ``
+    if (phones.length === 0) {
+        msg.classList.remove("d-none")
+
+    }
+    else {
+        msg.classList.add("d-none")
+    }
     phones = phones.slice(0, 20)
     phones.forEach(phone => {
         const phoneCard = document.createElement('div')
