@@ -52,8 +52,14 @@ const processSearch = (dataLimit) => {
     const searched = searchField.value
     toggleSpinner(true)
     loadPhones(searched, dataLimit);
-
 }
+
+document.getElementById("search-field").addEventListener("keypress", function (e) {
+    // console.log(e.key)
+    if (e.key === "Enter") {
+        processSearch(9)
+    }
+})
 
 const showSearchedPhone = () => {
     processSearch(9)
