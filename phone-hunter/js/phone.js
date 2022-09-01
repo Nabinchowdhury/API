@@ -18,8 +18,8 @@ const displayPhones = (phones, dataLimit) => {
         msg.classList.add("d-none")
     }
 
-    if (dataLimit && phones.length > 9) {
-        phones = phones.slice(0, 9)
+    if (dataLimit && phones.length > dataLimit) {
+        phones = phones.slice(0, dataLimit)
 
         showAll.classList.remove("d-none")
     }
