@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store-API</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="form-control w-full max-w-xs mx-auto my-4">
+            <label class="label">
+                <span class="label-text">Search your product</span>
+                <span class="label-text-alt">Press <kbd class="kbd kbd-xs">Enter</kbd></span>
+            </label>
+            <input id="search-field" type="text" placeholder="Search here"
+                class="input input-bordered w-full max-w-xs" />
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="flex mx-4 my-10 gap-5">
+            <div class="flex-none">
+                <ul id="items-container" class="bg-fuchsia-900 p-3 rounded">
+                    <!-- <li>item</li>
+                    <li>item</li>
+                    <li>item</li> -->
+                </ul>
+            </div>
+            <div id="product-cards" class="grow grid grid-cols-4 gap-4">
+                <!-- <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Shoes!
+                            <div class="badge badge-secondary">NEW</div>
+                        </h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <div class="badge badge-outline">Fashion</div>
+                            <div class="badge badge-outline">Products</div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+    <script src=" js/script.js">
+    </script>
+</body>
+
+</html>
